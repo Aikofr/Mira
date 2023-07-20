@@ -1,7 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signin from "./pages/Signin/Signin";
 import Signup from "./pages/Signin/Signup";
+import NewsPage from "./pages/Lspd/NewsPage";
 import Error from "./pages/Error";
+
+import LspdLayout from "./layout/LspdLayout";
 import "./App.scss";
 
 function App() {
@@ -12,6 +15,10 @@ function App() {
           <Route path="/login" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<Error />} />
+
+          <Route path="/" element={<LspdLayout />}>
+            <Route path="" element={<NewsPage />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </div>
