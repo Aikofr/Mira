@@ -89,5 +89,5 @@ VALUES
 INSERT INTO `news` (titre, article)
 VALUES
     ('AVIS DE RECHERCHE', "Gabriel 'D' Infinite & Céleste 'Nyx' McAllister sont activement recherchés pour les motifs suivats : Attaque à main armée au DOJ, kidnapping, recel d'armes, association de malfaiteurs. 10 000$ de récompense seront données a toute personne donnant une information majeure"),
-    ('CODE ROUGE', "Suite aux récents évènements, le CODE ROUGE est promulgué jusqu'au 16/07/2023 12h"),
-    ('CHASSE INTERDITE', "Les parks Rangers vous informent que la chasse n'est plus autorisée jusqu'au 2 juillet 14h. Des sanctions peuvent être appliquées.");
+    ('CHASSE INTERDITE', "Les parks Rangers vous informent que la chasse n'est plus autorisée jusqu'au 2 juillet 14h. Des sanctions peuvent être appliquées."),
+    ('CODE ROUGE', "Suite aux récents évènements, le CODE ROUGE est promulgué jusqu'au 16/07/2023 12h");
