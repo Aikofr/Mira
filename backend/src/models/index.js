@@ -38,6 +38,11 @@ const AuthManager = require("./AuthManager");
 
 models.auth = new AuthManager();
 models.auth.setDatabase(pool);
+
+const NewsManager = require("./NewsManager");
+
+models.news = new NewsManager();
+models.news.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
