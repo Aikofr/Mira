@@ -41,7 +41,7 @@ function Signin() {
 
         if (onlyUserData.role === "lspd") {
           setTimeout(() => {
-            navigate("/lspd");
+            navigate("/");
           }, 2000);
         }
       }
