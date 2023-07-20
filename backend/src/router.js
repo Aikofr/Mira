@@ -4,9 +4,10 @@ const router = express.Router();
 
 const authControllers = require("./controllers/authControllers");
 
-const { checkSignupData } = require("./services/checkData");
+const { checkLogData } = require("./services/checkData");
 const { hashPassword } = require("./services/auth");
 
-router.post("/signup", checkSignupData, hashPassword, authControllers.signup);
+router.post("/signup", checkLogData, hashPassword, authControllers.signup);
+router.post("/signin", checkLogData, authControllers.signin);
 
 module.exports = router;

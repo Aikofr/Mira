@@ -16,7 +16,7 @@ const authSchema = () => {
   });
 };
 
-const checkSignupData = (req, res, next) => {
+const checkLogData = (req, res, next) => {
   const { error } = authSchema("required").validate(req.body, {
     abortEarly: false,
   });
@@ -39,5 +39,5 @@ const checkSignupData = (req, res, next) => {
 };
 
 module.exports = {
-  checkSignupData,
+  checkLogData,
 };

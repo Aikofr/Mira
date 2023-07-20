@@ -13,6 +13,11 @@ const hashPassword = (req, res, next) => {
     });
 };
 
+const checkPassword = (hash, pwd) => {
+  return bcrypt.compare(pwd, hash);
+};
+
 module.exports = {
   hashPassword,
+  checkPassword,
 };
