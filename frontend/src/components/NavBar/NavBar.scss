@@ -54,6 +54,11 @@
   margin-top: 10rem;
   margin-bottom: 4rem;
   font-size: 30px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .menu-item {
@@ -72,6 +77,8 @@
   left: 50%;
   border-radius: 50%;
   transform: translateX(-50%);
+  object-fit: cover;
+  border: 2px solid black;
 }
 
 button#openBtn {
