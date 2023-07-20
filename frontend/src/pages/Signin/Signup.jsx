@@ -56,6 +56,7 @@ function Signup() {
               className="form-control"
               value={userSignup.email}
               onChange={(event) => handleUser(event)}
+              placeholder="you@example.com"
               name="email"
               required
             />
@@ -71,7 +72,7 @@ function Signup() {
               value={userSignup.password}
               onChange={(event) => handleUser(event)}
               name="password"
-              placeholder="you@example.com"
+              placeholder="**********"
               required
             />
           </div>
