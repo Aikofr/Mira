@@ -32,6 +32,7 @@ const signin = async (req, res) => {
       .json({
         msg: `Connexion réussit, Bienvenue ${user[0][0].firstname}`,
         id: user[0][0].id,
+        picture: user[0][0].picture,
         firstname: user[0][0].firstname,
         lastname: user[0][0].lastname,
         role: user[0][0].role,

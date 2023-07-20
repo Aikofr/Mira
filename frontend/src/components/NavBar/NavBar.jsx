@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BsCarFront, BsBook } from "react-icons/bs";
 import { useCurrentUser } from "../../contexts/UserContext";
-import logoLspd from "../../assets/logo_lspd.png";
 import "./NavBar.scss";
 
 function NavBar() {
@@ -34,8 +33,8 @@ function NavBar() {
             {user.role === "lspd" && (
               <>
                 <img
-                  className="logo-lspd"
-                  src={logoLspd}
+                  className="img-user"
+                  src={user.picture}
                   alt="Insignes de la Los Santos Police Department"
                 />
                 <h2 className="menu-info">
