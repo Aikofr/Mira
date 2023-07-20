@@ -14,3 +14,10 @@
 .Newbox p {
   color: white;
 }
+
+@media screen and (min-width: 700px) {
+  .Newbox {
+    text-align: center;
+    width: 65%;
+  }
+}
