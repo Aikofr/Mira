@@ -18,7 +18,6 @@ CREATE TABLE `profils` (
   `role` VARCHAR(90),
   `place` VARCHAR(90),
   `picture` LONGTEXT,
-  `license` VARCHAR(90),
   `alive` BOOLEAN DEFAULT TRUE,
   `user_id` INT,
   CONSTRAINT fk_user_id FOREIGN KEY (user_id) REFERENCES users(id)
@@ -57,17 +56,17 @@ CREATE TABLE `vehicles` (
 
 INSERT INTO `profils` (firstname, lastname, dob, role, place, picture)
 VALUES
-    ('John', 'Doe', '01/01/1990', 'Citoyen', 'Sandy Shores', ''),
-    ('Jane', 'Smith', '15/07/1995', 'Citoyen', 'Sandy Shores', ''),
-    ('Michael', 'Johnson', '28/03/1985', 'Citoyen', 'Paleto Bay', ''),
-    ('Isabella', 'Martinez', '03/02/1994', 'Citoyen', 'Los Santos', ''),
-    ('Miguel', 'Ruiz', '11/11/1995', 'lspd', 'Los Santos', 'https://i.pinimg.com/originals/0e/e2/c4/0ee2c419628899a91d21754b28e398b6.jpg'),
-    ('Albert', 'Torres', '03/02/1994', 'Citoyen', 'Sandy Shores', ''),
-    ('Emma', 'Taylor', '09/12/1993', 'Citoyen', 'Los Santos', ''),
-    ('Liam', 'Walker', '23/06/1989', 'Citoyen', 'Sandy Shores', ''),
-    ('Ava', 'Harris', '14/03/1996', 'Citoyen', 'Paleto Bay', ''),
-    ('Noah', 'Clark', '30/08/1992', 'Citoyen', 'Los Santos', ''),
-    ('Mia', 'Lewis', '05/07/1998', 'Citoyen', 'Paleto Bay', '');
+    ('John', 'Doe', '01/01/1990', 'Citoyen', 'Sandy Shores', 'https://media.discordapp.net/attachments/947820306746208327/1131284214625615967/image_60.png?width=1242&height=676'),
+    ('Jane', 'Smith', '15/07/1995', 'Citoyen', 'Sandy Shores', 'https://media.discordapp.net/attachments/947820306746208327/1130046748170129488/20230716095716_1.jpg?width=1341&height=702'),
+    ('Michael', 'Johnson', '28/03/1985', 'Citoyen', 'Paleto Bay', 'https://media.discordapp.net/attachments/947820306746208327/1129407873718435840/04.png?width=1202&height=676'),
+    ('Isabella', 'Martinez', '03/02/1994', 'Citoyen', 'Los Santos', 'https://media.discordapp.net/attachments/947820306746208327/1130838882942976111/image.png?width=1289&height=702'),
+    ('Miguel', 'Ruiz', '11/11/1995', 'lspd', 'Los Santos', 'https://media.discordapp.net/attachments/947820306746208327/1130852698732904509/20230718150247_1.jpg?width=1248&height=702'),
+    ('Albert', 'Torres', '03/02/1994', 'Citoyen', 'Sandy Shores', 'https://i.pinimg.com/originals/0e/e2/c4/0ee2c419628899a91d21754b28e398b6.jpg'),
+    ('Emma', 'Taylor', '09/12/1993', 'Citoyen', 'Los Santos', 'https://media.discordapp.net/attachments/947820306746208327/1129360597448937542/20230714123058_1.jpg?width=1248&height=702'),
+    ('Liam', 'Walker', '23/06/1989', 'Citoyen', 'Sandy Shores', 'https://media.discordapp.net/attachments/947820306746208327/1127526541283299449/20230709105220_1.jpg?width=1332&height=702'),
+    ('Ava', 'Harris', '14/03/1996', 'Citoyen', 'Paleto Bay', 'https://media.discordapp.net/attachments/947820306746208327/1124698486865141831/20230701152648_1.jpg?width=1248&height=702'),
+    ('Noah', 'Clark', '30/08/1992', 'Citoyen', 'Los Santos', 'https://media.discordapp.net/attachments/947820306746208327/1127215223233859606/20230708142834_1.jpg?width=1248&height=702'),
+    ('Mia', 'Lewis', '05/07/1998', 'Citoyen', 'Paleto Bay', 'https://media.discordapp.net/attachments/947820306746208327/1126600436284141578/Capture_decran_2023-07-06_013811.png?width=1304&height=702');
 
 INSERT INTO `vehicles` (marque, model, plate, profil_id)
 VALUES
