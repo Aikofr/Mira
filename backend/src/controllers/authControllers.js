@@ -30,7 +30,7 @@ const signin = async (req, res) => {
         expire: new Date() + 1000 * 60 * 60,
       })
       .json({
-        msg: `Connexion réussit, Bienvenue ${user[0][0].firstname}`,
+        msg: `Connexion réussie, Bienvenue ${user[0][0].firstname}`,
         id: user[0][0].id,
         picture: user[0][0].picture,
         firstname: user[0][0].firstname,

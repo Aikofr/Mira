@@ -61,7 +61,7 @@ VALUES
     ('Jane', 'Smith', '15/07/1995', 'Citoyen', 'Sandy Shores', ''),
     ('Michael', 'Johnson', '28/03/1985', 'Citoyen', 'Paleto Bay', ''),
     ('Isabella', 'Martinez', '03/02/1994', 'Citoyen', 'Los Santos', ''),
-    ('Miguel', 'Ruiz', '11/11/1995', 'Citoyen', 'Los Santos', ''),
+    ('Miguel', 'Ruiz', '11/11/1995', 'lspd', 'Los Santos', 'https://i.pinimg.com/originals/0e/e2/c4/0ee2c419628899a91d21754b28e398b6.jpg'),
     ('Albert', 'Torres', '03/02/1994', 'Citoyen', 'Sandy Shores', ''),
     ('Emma', 'Taylor', '09/12/1993', 'Citoyen', 'Los Santos', ''),
     ('Liam', 'Walker', '23/06/1989', 'Citoyen', 'Sandy Shores', ''),
@@ -84,3 +84,10 @@ VALUES
     ('Weeny', 'Issi', 'MI1048RA', 9),
     ('Declasse', 'Rhapsody ', 'MI1168RA', 10),
     ('Lampadati', 'Felon', 'MI6899RA', 11);
+
+
+INSERT INTO `news` (titre, article)
+VALUES
+    ('AVIS DE RECHERCHE', "Gabriel 'D' Infinite & Céleste 'Nyx' McAllister sont activement recherchés pour les motifs suivats : Attaque à main armée au DOJ, kidnapping, recel d'armes, association de malfaiteurs. 10 000$ de récompense seront données a toute personne donnant une information majeure"),
+    ('CODE ROUGE', "Suite aux récents évènements, le CODE ROUGE est promulgué jusqu'au 16/07/2023 12h"),
+    ('CHASSE INTERDITE', "Les parks Rangers vous informent que la chasse n'est plus autorisée jusqu'au 2 juillet 14h. Des sanctions peuvent être appliquées.");
