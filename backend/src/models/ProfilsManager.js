@@ -8,6 +8,12 @@ class ProfilsManager extends AbstractManager {
   getAllProfils() {
     return this.database.query(`SELECT * FROM ${this.table}`);
   }
+
+  getOneProfil(id) {
+    return this.database.query(`SELECT * FROM ${this.table} WHERE id = ?`, [
+      id,
+    ]);
+  }
 }
 
 module.exports = ProfilsManager;

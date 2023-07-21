@@ -10,6 +10,7 @@
   font-weight: bold;
   padding-bottom: 20px;
   border-bottom: 1px solid black;
+  text-decoration: none;
 }
 
 .pictureprofil {
@@ -18,4 +19,8 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
+}
+
+.citizenLink {
+  text-decoration: none;
 }

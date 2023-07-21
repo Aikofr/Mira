@@ -42,6 +42,7 @@ CREATE TABLE `amendes` (
   `titre` VARCHAR(90),
   `description` VARCHAR(255),
   `profil_id` INT,
+  `auth_id` INT,
   CONSTRAINT fk_profil_id FOREIGN KEY (profil_id) REFERENCES profils(id)
 );
 
@@ -90,3 +91,9 @@ VALUES
     ('AVIS DE RECHERCHE', "Gabriel 'D' Infinite & Céleste 'Nyx' McAllister sont activement recherchés pour les motifs suivats : Attaque à main armée au DOJ, kidnapping, recel d'armes, association de malfaiteurs. 10 000$ de récompense seront données a toute personne donnant une information majeure"),
     ('CHASSE INTERDITE', "Les parks Rangers vous informent que la chasse n'est plus autorisée jusqu'au 2 juillet 14h. Des sanctions peuvent être appliquées."),
     ('CODE ROUGE', "Suite aux récents évènements, le CODE ROUGE est promulgué jusqu'au 16/07/2023 12h");
+
+INSERT INTO `amendes` (tarif, titre, description, profil_id, auth_id)
+VALUES
+    (150, "Excès de vitesse", "120km en ville", 11, 5),
+    (350, "Excès de vitesse", "170 sur autoroute", 11, 5),
+    (2000, "Braquage superette", "Superette 7501 - braquage Apu", 3, 5);
