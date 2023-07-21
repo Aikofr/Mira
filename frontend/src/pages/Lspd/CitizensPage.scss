@@ -1,0 +1,24 @@
+.CitizensContainers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CitizensContainers h2 {
+  color: #f0e16f;
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.citizenInput {
+  width: 85%;
+  margin: auto;
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.list-group {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 90%;
+  margin-bottom: 20px;
+}

@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signin from "./pages/Signin/Signin";
 import Signup from "./pages/Signin/Signup";
 import NewsPage from "./pages/Lspd/NewsPage";
+import CitizensPage from "./pages/Lspd/CitizensPage";
+import ProfilPage from "./pages/Lspd/ProfilPage";
 import Error from "./pages/Error";
 
 import LspdLayout from "./layout/LspdLayout";
@@ -18,6 +20,8 @@ function App() {
 
           <Route path="/" element={<LspdLayout />}>
             <Route path="" element={<NewsPage />} />
+            <Route path="citizens" element={<CitizensPage />} />
+            <Route path="citizens/:id" element={<ProfilPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

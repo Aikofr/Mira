@@ -43,6 +43,16 @@ const NewsManager = require("./NewsManager");
 
 models.news = new NewsManager();
 models.news.setDatabase(pool);
+
+const ProfilsManager = require("./ProfilsManager");
+
+models.profils = new ProfilsManager();
+models.profils.setDatabase(pool);
+
+const FinesManager = require("./FinesManager");
+
+models.fines = new FinesManager();
+models.fines.setDatabase(pool);
 // bonus: use a proxy to personalize error message,
 // when asking for a non existing model
 
